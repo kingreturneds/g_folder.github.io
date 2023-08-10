@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        width: 360px;
+        height: 800px;
+        background: url(), lightgray 50% / cover no-repeat;
+        border: 1px solid black;
+    }
+    .mains{
+    position:  absolute;
+    color: #000;
+    font-family: Inter;
+    font-size: 24em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 15px 132px 756px 20px;
+    }
+    .mains span{
+        color: #40B19C;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    }
+    .icon{
+        position: absolute;
+ 
+    }
+    .icon img{
+      width: 19px;;
+      height: 19px;
+       margin: 5px 30px 764px 311px;
+    }
+ 
+   
+    .ps p{color: #000;
+    text-align: center;
+    font-family: Orelega One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    position: absolute;
+    margin: 100px 189px 643px 17px;
+
+    }
+    .ps span{
+    color: #000;
+    font-family: Orelega One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    position: relative;
+   
+    }
+    .text{
+        margin: 162px 212px 627px 17px;
+        width: 131px;
+        color: #000;
+    font-family: Inter;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.27px;
+  
+    }
+    .picture {
+      position: absolute;
+    margin: 50px 67px 602px 194px;
+    width: 99px;
+height: 148px;
+flex-shrink: 0;
+    }
+    .picture svg{
+width: 211.39px;
+height: 156.78px;
+     margin: 1px;
+     position: absolute;
+     left: -48px;
+     z-index: -1;
+    }
+    .picture svg path{
+        margin: -100px;
+        position: absolute;
+    }
+    #p1P{
+        display: flex;
+width: 177px;
+height: 50px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Inter;
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.24px;
+    }
+    .secondmain{
+        width: 188px;
+        color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.42px;
+display: flex;
+
+
+
+    }
+
+    .secondmain p{
+width: 160px;
+height: 149px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Inter;
+font-size: 8px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.24px;
+margin-left: 50px;
+    }
+    .secondmain img{
+        width: 110.772px;
+height: 111.63px;
+flex-shrink: 0;
+transform: scaleX(-1);
+border-radius: 3px;
+  
+    }
+    h6{
+        width: 188px;
+        color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.42px;
+margin: 285 22 481 150;
+margin-left: 160px;
+    }
+    .line1{
+        padding-left: 160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 40px;
+margin-left: -40px;
+z-index: -1;
+    }
+    .line2{
+        padding-left: 160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 30px;
+margin-left: -0px;
+z-index: -1;
+    }
+    .line3{
+        padding-left: 160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 20px;
+margin-left: -0px;
+z-index: -1;
+    }
+    .line4{
+        padding-left: 160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 10px;
+margin-left: -0px;
+z-index: -1;
+
+    }  
+     .line5{
+        padding-left:160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 60px;
+margin-left: -40px;
+z-index: -1;
+
+    }
+    .line6{
+        padding-left:160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 70px;
+margin-left: -40px;
+z-index: -1;
+
+    }  .line7{
+        padding-left:160px;
+        width: 151.464px;
+height: 1px;
+background: #3FA08E;
+rotate: 45deg;
+position:absolute;
+margin-top: 50px;
+margin-left: -0px;
+z-index: -1;
+
+    }
+    .glds{
+        position: relative;
+        display: grid;
+        margin: 5%;
+        grid: auto /auto auto auto;
+        top: 100px;
+        margin-left: 40px
+     
+    }
+    .glds p{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: 2px solid #40B19C;
+        padding: 24%;
+        margin-left: 14px;
+        box-shadow: 10px 10px 24px gray;
+
+    }
+
+
+</style>
+<body>
+    <main> 
+        <div class="twpdiv">
+             <div class="mains">
+                <div class="icon" id="idicon"> 
+                    <img src="/icon_pic/menu.png" alt="">
+                </div>
+        <h1>Port <span>folio</span></h1>
+       
+    </div>
+       
+        <div class="picture">
+            <img src="/icon_pic/gererro2 1.png" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="182" height="158" viewBox="0 0 182 158" fill="none">
+                <path d="M164.5 139.562C133 111.062 88.7564 157.562 57 157.562C25.2436 157.562 0.5 125.123 0.5 93.3671C0.5 61.6107 34.09 5.48413 152.5 0.867094C264.5 -3.5 188.048 160.868 164.5 139.562Z" fill="#40B19C"/>
+              </svg>    
+              <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 99 99" fill="none">
+                <circle cx="49.5" cy="49.5" r="47.5" fill="#EDEDED" stroke="white" stroke-width="4"/>
+              </svg>
+        </div>  
+</div>
+</main>
+<div class="ps">
+    <p>GIAN CARLOS <span id="idspan">
+    GERERRO</span></p>
+    </div>
+    <div class="text">
+        <p>Full stack Developer</p>
+        <p id="p1">I am an organized and diligent paralegal with 10 years of experience. I am looking for a Full stack developer position where I can work with clients in underrepresented populations.</p>
+        <h6>Why hire me for your next project?</h6>
+        <div class="secondmain">  
+            <img src="icon_pic/c9a4f328666d79a68b875277f05c86ce.png" alt="">
+                <line class="line1" aria-hidden="true"></line>
+                <line class="line2" aria-hidden="true"></line>
+                <line class="line3" aria-hidden="true"></line>
+                <line class="line4" aria-hidden="true"></line>
+                <line class="line5" aria-hidden="true"></line>
+                <line class="line6" aria-hidden="true"></line>
+                <line class="line7" aria-hidden="true"></line>
+            
+            <p>Based on the job description, your organization is searching for an administrative assistant with both strong technical abilities and interpersonal skills, and I think my experience of working as an office assistant previously will align with the responsibilities that I would be shouldering.
+                    <br>
+                    <br>
+                I have reduced office supply costs to 25% by reorganizing the supply closet. I am a good communicator with experience making phone calls, giving presentations in person, and exchanging emails.
+                <br>
+                <br>
+                I'm also proficient in various pertinent software packages, such as spreadsheet applications and content management systems. If given a chance, I would like to contribute my broad range of skills to your organization.</p>
+        </div>
+        <div class="glds">
+            <p>java <br><span style="color: #40B19C;">100%</span> </p>
+            <p>php<br><span style="color: #40B19C;">100% </span></p>
+            <p>python<br><span style="color: #40B19C;">100% </span></p>
+            <p>c++<br><span style="color: #40B19C;">100% </span></p>
+            <p>c<br><span style="color: #40B19C;">100% </span></p>
+            <p>ai<br><span style="color: #40B19C;">100% </span></p>
+
+        </div>
+    </div>
+   
+
+
+</body>
+</html>
